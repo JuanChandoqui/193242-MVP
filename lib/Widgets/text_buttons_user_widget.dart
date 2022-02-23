@@ -11,10 +11,7 @@ class TextButtonsUsers extends StatelessWidget {
       children: [
         SizedBox(height: 30, child: textButtonUser('Entrar como invitado',const Color(0XFFFC1660))),
         SizedBox(height: 30, child: textButtonUser('Entrar como vendedor',const Color(0XFF7BA95E))),
-        Padding(
-          padding: const EdgeInsets.only(top: 100),
-          child: textButtonLogin(),
-        )
+        textButtonLogin()
       ],
     );
   }

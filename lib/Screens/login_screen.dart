@@ -8,25 +8,27 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 50),
-            child: Column(
-              children: const [
-                Padding(
-                  padding: EdgeInsets.only(left: 24, right: 24),
-                  child: IconWidget(),
-                ),
-                SizedBox(height: 100,),
-                ButtonsRegister(),
-                SizedBox(height: 90,),
-                TextButtonsUsers()
-              ],
-            ),
-          )
-        ],
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 50),
+              child: Column(
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.only(left: 24, right: 24),
+                    child: IconWidget(),
+                  ),
+                  SizedBox(height: 100,),
+                  ButtonsRegister(),
+                  SizedBox(height: 90,),
+                  TextButtonsUsers()
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
